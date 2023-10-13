@@ -1,0 +1,9 @@
+<odoo>
+<data>
+<report id="dms_patients_report"
+        string="patients"
+        name="dms.patients_templet"
+        model="dms.patients"
+        report_type="qweb-html"/>
+</data>
+</odoo>

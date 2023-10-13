@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="action_medical_history" model="ir.actions.act_window">
+<field name="name">medical_history</field>
+<field name="res_model">dms.medical_history</field>
+</record>
+
+
+
+    <record model="ir.ui.view" id="dms_medical_history_tree_view">
+<field name="name">tree medical_history</field>
+<field name="model">dms.medical_history</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+<field name="Effective_Material"/>
+<field name="price"/>
+
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

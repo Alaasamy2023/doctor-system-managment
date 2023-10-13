@@ -1,0 +1,53 @@
+<odoo>
+<data>
+<template id="dms.patients_templet">
+<t t-call="web.html_container">
+
+<h2>Report title</h2>
+
+
+<!--<t t-foreach="docs" t-as="o">-->
+<t t-call="web.html_container">
+<!--<div class="page">-->
+
+<!--<p>-->
+<!--this patients name is-->
+<!--<span t-field="o.name"/>-->
+<!--</p>-->
+
+  <table class="table table-striped">
+  <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">email</th>
+        <th scope="col">address</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Age</th>
+        <th scope="col">Gender</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr t-foreach="docs" t-as="o">
+      <th scope="row"><span t-field="o.id"/></th>
+      <td ><span t-field="o.name"/></td>
+      <td><span t-field="o.email"/></td>
+      <td><span t-field="o.address"/></td>
+      <td><span t-field="o.phone"/></td>
+      <td><span t-field="o.age"/></td>
+      <td><span t-field="o.gender"/> </td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+<!--</div>-->
+</t>
+</t>
+<!--</t>-->
+</template>
+</data>
+</odoo>

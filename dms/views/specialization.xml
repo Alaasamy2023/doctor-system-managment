@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="action_specialization" model="ir.actions.act_window">
+<field name="name">specialization</field>
+<field name="res_model">dms.specialization</field>
+</record>
+
+
+
+    <record model="ir.ui.view" id="dms_specialization_tree_view">
+<field name="name">tree specialization</field>
+<field name="model">dms.specialization</field>
+<field name="arch" type="xml">
+<tree>
+<field name="specialization"/>
+<field name="is_open"/>
+
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

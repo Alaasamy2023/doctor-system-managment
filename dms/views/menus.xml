@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+
+
+
+
+<menuitem id="dsm_root" name="dsm"/>
+<menuitem id="dsm_doctor_menu" name="doctor" parent="dsm_root" action="action_doctor"/>
+
+    <menuitem id="dsm_patient_menu" name="patient" parent="dsm_root" action="action_patients"/>
+
+
+
+    <menuitem id="dsm_specialization_menu" name="specialization" parent="dsm_root" action="action_specialization"/>
+
+
+
+    <menuitem id="dsm_slots_menu" name="slots" parent="dsm_root" action="action_slots"/>
+    <menuitem id="dsm_appointment_menu" name="appointment" parent="dsm_root" action="action_appointment"/>
+    <menuitem id="dsm_medical_history_menu" name="medical_history" parent="dsm_root" action="action_medical_history"/>
+    <menuitem id="dsm_users_menu" name="users" parent="dsm_root" action="base.action_res_users"/>
+
+</odoo>

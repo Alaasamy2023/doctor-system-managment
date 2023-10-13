@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="action_slots" model="ir.actions.act_window">
+<field name="name">slots</field>
+<field name="res_model">dms.slots</field>
+</record>
+
+
+
+    <record model="ir.ui.view" id="dms_slots_tree_view">
+<field name="name">tree slots</field>
+<field name="model">dms.slots</field>
+<field name="arch" type="xml">
+<tree>
+<field name="slots"/>
+
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</odoo>

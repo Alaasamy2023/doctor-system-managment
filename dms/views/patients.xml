@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="action_patients" model="ir.actions.act_window">
+<field name="name">patients</field>
+<field name="res_model">dms.patients</field>
+</record>
+
+
+
+    <record model="ir.ui.view" id="dms_patients_tree_view">
+<field name="name">tree patients</field>
+<field name="model">dms.patients</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+<field name="email"/>
+<field name="address"/>
+    <field name="phone"/>
+    <field name="age"/>
+    <field name="gender"/>
+    <field name="patient_medical_id"/>
+
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+
+
+    <record model="ir.ui.view" id="dms_patient_medical_tree_view">
+<field name="name">tree patient_medical</field>
+<field name="model">dms.patient_medical</field>
+<field name="arch" type="xml">
+<tree>
+     <field name="petient_id"/>
+    <field name="doctor_id"/>
+    <field name="medical_history_id"/>
+    <field name="daily_dose"/>
+    <field name="dose"/>
+    <field name="start_time"/>
+    <field name="end_time"/>
+    <field name="status"/>
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+</odoo>

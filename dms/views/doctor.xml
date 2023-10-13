@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<record id="action_doctor" model="ir.actions.act_window">
+<field name="name">doctor</field>
+<field name="res_model">dms.doctor</field>
+</record>
+
+
+
+    <record model="ir.ui.view" id="dms_doctor_tree_view">
+<field name="name">tree doctor</field>
+<field name="model">dms.doctor</field>
+<field name="arch" type="xml">
+<tree>
+<field name="name"/>
+<field name="email"/>
+<field name="address"/>
+    <field name="phone"/>
+    <field name="fee"/>
+<field name="specialization_id" domain="[('is_open','=',True)]"/>
+
+</tree>
+</field>
+</record>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</odoo>
